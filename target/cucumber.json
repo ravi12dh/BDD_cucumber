@@ -1,0 +1,143 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#Background"
+          },
+          {
+            "line": 5,
+            "value": "# Given user is on the techfios login page"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 3005879700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepsDefinitions.init()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User Should be able to login with valid credentials",
+        "description": "",
+        "id": "tf-login-functionality-validation;user-should-be-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 608528300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepsDefinitions.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1367611600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on techfios login page",
+            "match": {
+              "location": "LoginStepsDefinitions.user_is_on_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2273400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60657100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User enters password as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepsDefinitions.user_enters_password_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 967458600,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "#When User enters \"username\" from mysql database"
+              },
+              {
+                "line": 13,
+                "value": "#When User enters \"password\" from mysql database"
+              }
+            ],
+            "line": 15,
+            "name": "User click on Signin button",
+            "match": {
+              "location": "LoginStepsDefinitions.user_click_on_Signin_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8189400,
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Dashboard]- iBilling\u003e but was:\u003c[Login ]- iBilling\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat steps.LoginStepsDefinitions.user_should_be_on_Dashboard_page(LoginStepsDefinitions.java:58)\r\n\tat ✽.Then User should be on Dashboard page(features/Login.feature:16)\r\n",
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "User should be on Dashboard page",
+            "match": {
+              "location": "LoginStepsDefinitions.user_should_be_on_Dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Scenario1"
+          }
+        ]
+      }
+    ],
+    "name": "TF login functionality validation",
+    "description": "",
+    "id": "tf-login-functionality-validation",
+    "keyword": "Feature",
+    "uri": "features/Login.feature"
+  }
+]
